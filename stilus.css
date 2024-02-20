@@ -8,4 +8,69 @@ body{
     background-image: url('Kepek/hatter.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-image: linear-gradient(rgb(5, 32, 7), rgb(15, 53, 10));
+    opacity: 80%;
+    height: 100px;
+    position: relative;
+}
+
+header h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 72px;
+    color: rgb(9, 201, 9);
+    -webkit-text-stroke-color: rgb(118, 118, 118);
+    -webkit-text-stroke-width: 2px;
+    text-shadow: 1px 1px 10px black;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+article div{
+    display: flex;
+    flex-direction: column;
+}
+
+article div div{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+article div div img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+footer{
+    background-image: linear-gradient(rgb(15, 53, 10), rgb(5, 32, 7));
+    opacity: 80%;
+    height: 100px;
+    position: relative;
+}
+
+footer h3{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: rgb(9, 201, 9);
 }
