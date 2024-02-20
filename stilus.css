@@ -26,36 +26,50 @@ header h1{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 72px;
-    color: rgb(9, 201, 9);
-    -webkit-text-stroke-color: rgb(118, 118, 118);
+    color: rgb(12, 234, 12);
+    -webkit-text-stroke-color: rgb(58, 40, 27);
     -webkit-text-stroke-width: 2px;
     text-shadow: 1px 1px 10px black;
-}
-
-main{
-    width: 80%;
-    margin: auto;
 }
 
 article{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
 }
 
 article div{
+    padding: 15px;
+    margin: 10px;
+    border: 3px solid rgb(58, 40, 27);
+    border-radius: 10px;
+    background-color: rgba(30, 54, 29, 0.7);
+    
     display: flex;
     flex-direction: column;
+
+    width: 33%;
+    flex: calc(30% - 10px);
 }
 
-article div div{
-    padding: 15px;
-    border: 1px solid black;
+article div img{
+    width: 100%;
     border-radius: 10px;
+    height: 300px;
 }
 
-article div div img{
-    width: 300px;
-    border-radius: 10px;
+article div p{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgb(58, 40, 27);
+    border-top: 3px rgb(58, 40, 27) solid;
+    padding-top: 3%;
+    margin-top: 5%;
 }
 
 footer{
@@ -73,4 +87,68 @@ footer h3{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: rgb(9, 201, 9);
+}
+
+
+@media only screen and (max-width: 1150px) {
+    article{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    article{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    article{
+        width: 80%;
+    }
+
+    article div{
+        flex: 0 0 calc(50% - 20px); 
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    article{
+        width: 90%;
+    }
+    
+    header h1{
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    article{
+        width: 60%;
+    }
+    
+    article div{
+        flex: 0 calc(100% - 20px); 
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header h1{
+        font-size: 4vh;
+    }
+
+    article{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    header h1{
+        font-size: 30px;
+        padding: 25px;
+    }
+
+    article{
+        width: 90%;
+    }
 }
