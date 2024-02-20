@@ -92,6 +92,19 @@ form div input{
     width: 70%;
 }
 
+#kuldes{
+    padding: 10px 25px;   
+    border-radius: 20px; 
+    background-color: rgb(5, 187, 5);
+    font-size: large;
+    margin: 0;
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 footer{
     background-image: linear-gradient(rgb(15, 53, 10), rgb(5, 32, 7));
     opacity: 80%;
