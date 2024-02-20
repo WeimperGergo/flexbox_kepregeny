@@ -99,7 +99,7 @@ form div input{
     font-size: large;
     margin: 0;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 5px;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -169,5 +169,18 @@ footer h3{
         padding: 25px;
     }
 
+    
+}
+
+
+#honorablemention{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#honorablemention img{
+    width: 100%;
     
 }
